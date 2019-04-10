@@ -11,19 +11,17 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Display 
-          balls={this.state.balls} 
-          strikes={this.state.strikes} 
-        />
+      <div className="App">
         <Dashboard 
           strike={this.strike}
           ball={this.ball}
           hit={this.hit}
           foul={this.foul}
         />
-        
-        {/* <button onClick={this.strike}>Strike</button> */}
+        <Display 
+          balls={this.state.balls} 
+          strikes={this.state.strikes} 
+        />
       </div>
     );
   }
