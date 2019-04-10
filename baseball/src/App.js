@@ -11,7 +11,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         <Display 
           balls={this.state.balls} 
           strikes={this.state.strikes} 
@@ -22,11 +22,14 @@ class App extends Component {
           hit={this.hit}
           foul={this.foul}
         />
+        
+        {/* <button onClick={this.strike}>Strike</button> */}
       </div>
     );
   }
 
  strike = () => {
+   console.log(typeof this.state.strikes)
     if (this.state.strikes < 2) {
       this.setState({ strikes: this.state.strikes + 1 })
     } else {

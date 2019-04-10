@@ -1,11 +1,10 @@
 import React from 'react';
 
 const Display = props => {
-    
     return (
         <>
-            <p>Balls: {props.balls} </p>
-            <p>Strikes: {props.strikes} </p>
+            <div>Balls: {props.balls}</div>
+            <div>Strikes: {props.strikes}</div>
         </>
     )
 }
